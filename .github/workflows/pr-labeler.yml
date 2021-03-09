@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Label the PR size
     steps:
-      - uses: coverwallet/pr-labeler@feature/op-554-exclude-files-from-the-counting
+      - uses: coverwallet/pr-labeler@test/op-554-testing-excluding-files
         with:
           xs_max_size: '10'
           s_max_size: '100'
