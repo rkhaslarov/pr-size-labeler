@@ -18,7 +18,7 @@ const getLabelConfig = (tools) => {
     {
       name: 'M',
       size: tools.inputs.m_max_size,
-      color: 'ffffb5',
+      color: 'ff9000',
     },
     {
       name: 'L',
