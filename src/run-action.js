@@ -50,7 +50,7 @@ const getNumberOfLines = async (tools) => {
   try {
     tools.log.info(`Getting the number of lines`);
 
-    const { data: files } = await tools.github.paginate("GET /repos/{owner}/{repo}/pulls/{pull_number}/files" ,{
+    const files = await tools.github.paginate("GET /repos/{owner}/{repo}/pulls/{pull_number}/files" ,{
       ...tools.context.repo,
       pull_number: tools.context.issue.number,
     });
